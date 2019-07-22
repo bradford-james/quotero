@@ -1,0 +1,23 @@
+{
+  "name": "quotify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradford-james/quotify.git"
+  },
+  "keywords": [],
+  "author": "Bradford James <bradwettig@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bradford-james/quotify/issues"
+  },
+  "homepage": "https://github.com/bradford-james/quotify#readme",
+  "dependencies": {
+    "minimist": "^1.2.0"
+  }
+}
