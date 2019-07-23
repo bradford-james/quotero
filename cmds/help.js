@@ -1,9 +1,10 @@
 const menus = {
   main: `
-  cli-demo [command] <options>
+  quotify [command] <options>
 
-    version ............ show package version
-    help ............... show help menu for a command
+    <default - no option> ..... will return quote
+    version ................... show package version
+    help ...................... show help menu for a command
     `
 };
 

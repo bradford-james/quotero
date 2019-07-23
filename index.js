@@ -4,7 +4,7 @@ const error = require("./utils/error");
 module.exports = () => {
   const args = minimist(process.argv.slice(2));
 
-  let cmd = args._[0] || "help";
+  let cmd = args._[0] || "quote";
 
   if (args.version || args.v) {
     cmd = "version";
@@ -15,6 +15,9 @@ module.exports = () => {
   }
 
   switch (cmd) {
+    case "quote":
+      require("./cmds/quote")(args);
+      break;
     case "version":
       require("./cmds/version")(args);
       break;
