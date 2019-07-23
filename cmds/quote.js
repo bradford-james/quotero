@@ -13,6 +13,6 @@ module.exports = async args => {
   } catch (err) {
     spinner.stop();
 
-    console.log(err.response.data.error.message);
+    require("../utils/error")(err, true);
   }
 };
