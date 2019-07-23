@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "bin": "bin/quotify.js",
+  "readme": "README.md",
+  "bin": {
+    "quotify": "bin/quotify.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bradford-james/quotify.git"

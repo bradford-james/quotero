@@ -1,0 +1,1 @@
+Project consists of a cli-tool that will retrieve a random quote, upon using the command "quotify", to lighten up your terminal as you work and possibly provide that spark of inspiration that's been eluding you.
