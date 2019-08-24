@@ -5,11 +5,16 @@ module.exports = async args => {
   const spinner = ora().start();
 
   try {
-    const quote = await getQuote();
-
+    const randomQuote = await getQuote();
     spinner.stop();
 
-    console.log(quote);
+    const consoleOutput = `
+      ${randomQuote.quote}
+
+      -${randomQuote.author}
+    `;
+
+    console.log(consoleOutput);
   } catch (err) {
     spinner.stop();
 

@@ -1,36 +1,18 @@
-const axios = require("axios");
-const htmlToText = require("html-to-text");
+const low = require("lowdb");
+const FileSync = require("lowdb/adapters/FileSync");
+const path = require("path");
 
-const genNumSeq = () => {
-  const num = Math.floor(Math.random() * 200);
-  let primary = 0;
-  let secondary = 0;
-  let inc = 1;
-  for (i = 1; i < 50; i++) {
-    primary++;
-    secondary = num - inc;
-    inc = inc + i;
-    if (inc > num) break;
-  }
-  return [primary, secondary];
-};
+const writeDirectory = __dirname;
+const writeFileURL = path.resolve(writeDirectory, "../db.json");
+const adapter = new FileSync(writeFileURL);
+const db = low(adapter);
 
 module.exports = async category => {
-  const numSeq = genNumSeq();
+  const quotes = db.get("quotes").value();
+  const randomNum = Math.floor(Math.random() * 10);
 
-  const results = await axios.get(
-    `http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=${
-      numSeq[0]
-    }`
-  );
-  const index = numSeq[1];
-  const quote = htmlToText.fromString(results.data[index].content, {
-    wordwrap: 60
-  });
-  const author = htmlToText.fromString(results.data[index].title);
-
-  return `
-  ${quote}
-    -${author}
-      `;
+  return {
+    quote: quotes[randomNum].quote,
+    author: quotes[randomNum].author
+  };
 };
