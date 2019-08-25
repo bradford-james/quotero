@@ -1,5 +1,5 @@
 const ora = require("ora");
-const getQuote = require("../utils/getQuotes");
+const getQuote = require("../utils/getQuote");
 
 module.exports = async args => {
   const spinner = ora().start();

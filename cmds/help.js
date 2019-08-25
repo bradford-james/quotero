@@ -1,6 +1,6 @@
 const menus = {
   main: `
-  quotify [command] <options>
+  quoter [command] <options>
 
     <default - no option> ..... will return quote
     version ................... show package version
@@ -9,7 +9,7 @@ const menus = {
 };
 
 module.exports = args => {
-  const subCmd = args._[0] === 'help' ? args._[1] : args._[0];
+  const subCmd = args._[0] === "help" ? args._[1] : args._[0];
 
   console.log(menus[subCmd] || menus.main);
 };

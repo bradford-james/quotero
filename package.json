@@ -1,5 +1,5 @@
 {
-  "name": "quotify",
+  "name": "quoter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,19 +8,19 @@
   },
   "readme": "README.md",
   "bin": {
-    "quotify": "bin/quotify.js"
+    "quoter": "bin/quoter.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bradford-james/quotify.git"
+    "url": "git+https://github.com/bradford-james/quoter.git"
   },
   "keywords": [],
   "author": "Bradford James <bradwettig@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bradford-james/quotify/issues"
+    "url": "https://github.com/bradford-james/quoter/issues"
   },
-  "homepage": "https://github.com/bradford-james/quotify#readme",
+  "homepage": "https://github.com/bradford-james/quoter#readme",
   "dependencies": {
     "lowdb": "^1.0.0",
     "minimist": "^1.2.0",

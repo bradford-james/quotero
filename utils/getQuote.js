@@ -3,7 +3,7 @@ const FileSync = require("lowdb/adapters/FileSync");
 const path = require("path");
 
 const writeDirectory = __dirname;
-const writeFileURL = path.resolve(writeDirectory, "../db.json");
+const writeFileURL = path.resolve(writeDirectory, "../lib/db.json");
 const adapter = new FileSync(writeFileURL);
 const db = low(adapter);
 

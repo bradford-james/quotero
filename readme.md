@@ -1,6 +1,6 @@
 # Quoter
 
-The project consists of a cli-tool that will retrieve a random quote, upon using the command "quotify", to lighten up your terminal as you work and possibly provide that spark of inspiration that's been eluding you.# Quoter
+The project consists of a cli-tool that will retrieve a random quote, upon using the command "quoter", to lighten up your terminal as you work and possibly provide that spark of inspiration that's been eluding you.# Quoter
 
 Quoter is CLI tool, when installed globally, will print quotes on design from Martin Scorsese to Pablo Picaso to the console.
 Type 'Quoter', see the quote, simple as that.
@@ -47,10 +47,10 @@ _To Be Completed_
 
 ## Built With
 
-- [Node](http://www.dropwizard.io/1.0.2/docs/) - Base Platform
-- [LowDB](https://maven.apache.org/) - Source for quotes
-- [Minimist](https://rometools.github.io/rome/) - Parse input parameters, commands, options
-- [Ora](https://rometools.github.io/rome/) - Visual loader
+- [Node](https://nodejs.org/en/docs/) - Base Platform
+- [LowDB](https://www.npmjs.com/package/lowdb) - Source for quotes
+- [Minimist](https://www.npmjs.com/package/minimist) - Parse input parameters, commands, options
+- [Ora](https://www.npmjs.com/package/minimist) - Visual loader
 
 ## Versioning
 
@@ -62,7 +62,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details
 
 ## Upcoming Development
 
