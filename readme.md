@@ -1,6 +1,6 @@
 # Quoter
 
-The project consists of a cli-tool that will retrieve a random quote, upon using the command "quoter", to lighten up your terminal as you work and possibly provide that spark of inspiration that's been eluding you.# Quoter
+The project consists of a cli-tool that will retrieve a random quote, upon using the command "quoter", to lighten up your terminal as you work and possibly provide that spark of inspiration that's been eluding you.
 
 Quoter is CLI tool, when installed globally, will print quotes on design from Martin Scorsese to Pablo Picaso to the console.
 Type 'Quoter', see the quote, simple as that.
@@ -67,9 +67,3 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 ## Upcoming Development
 
 - Establish Quoter as an API (not have to store db doc locally)
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
