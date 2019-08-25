@@ -9,7 +9,7 @@ const db = low(adapter);
 
 module.exports = async category => {
   const quotes = db.get("quotes").value();
-  const randomNum = Math.floor(Math.random() * 10);
+  const randomNum = Math.floor(Math.random() * 1000);
 
   return {
     quote: quotes[randomNum].quote,

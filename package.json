@@ -22,8 +22,6 @@
   },
   "homepage": "https://github.com/bradford-james/quotify#readme",
   "dependencies": {
-    "axios": "^0.19.0",
-    "html-to-text": "^5.1.1",
     "lowdb": "^1.0.0",
     "minimist": "^1.2.0",
     "ora": "^3.4.0"
