@@ -18,6 +18,7 @@ module.exports = async args => {
   } catch (err) {
     spinner.stop();
 
-    require("../utils/error")(err, true);
+    console.error(err);
+    process.exit(1);
   }
 };
