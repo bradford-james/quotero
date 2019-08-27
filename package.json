@@ -1,6 +1,6 @@
 {
   "name": "quoter",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Returns a random quote.  Can be run from CLI (logs to the console) or included in your source code (returns an object).",
   "main": "index.js",
   "scripts": {
