@@ -1,4 +1,5 @@
 const cli = require("../index");
+const { version } = require("../package.json");
 
 // Set Up - Tear Down
 
@@ -23,13 +24,13 @@ describe("Version Command Tests", () => {
   it("should log the CLI version to the console (test 1)", () => {
     process.argv.push("--version");
     cli();
-    expect(global.console.log).toHaveBeenCalledWith("v2.1.0");
+    expect(global.console.log).toHaveBeenCalledWith(`v${version}`);
   });
 
   it("should log the CLI version to the console (test 2)", () => {
     process.argv.push("-v");
     cli();
-    expect(global.console.log).toHaveBeenCalledWith("v2.1.0");
+    expect(global.console.log).toHaveBeenCalledWith(`v${version}`);
   });
 });
 

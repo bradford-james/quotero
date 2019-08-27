@@ -1,9 +1,9 @@
-# Quoter
+# Quotero
 
-The project consists of a cli-tool that will retrieve a random quote, upon using the command "quoter", to lighten up your terminal as you work and possibly provide that spark of inspiration that's been eluding you.
+The project consists of a cli-tool that will retrieve a random quote, upon using the command "quotero", to lighten up your terminal as you work and possibly provide that spark of inspiration that's been eluding you.
 
-Quoter is CLI tool, when installed globally, will print quotes on design from Martin Scorsese to Pablo Picaso to the console.
-Type 'Quoter', see the quote, simple as that.
+Quotero is CLI tool, when installed globally, will print quotes on design from Martin Scorsese to Pablo Picaso to the console.
+Type 'quotero', see the quote, simple as that.
 
 ## Getting Started
 
@@ -12,7 +12,7 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 - This is a package registered with [npm](https://www.npmjs.com/get-npm)
-- Quoter is coded with [Node.js](https://nodejs.org/en/download/)
+- Quotero is coded with [Node.js](https://nodejs.org/en/download/)
 
 Check to see that you have both downloaded:
 
@@ -28,13 +28,13 @@ v8.9.4
 Install globally (with npm)
 
 ```
->npm install -g quoter
+>npm install -g quotero
 ```
 
 In your terminal of choice:
 
 ```
->quoter
+>quotero
 
     Never re-invent the wheel, unless you're sure the client needn't go anywhere.
     -Russell Bishop
@@ -59,11 +59,11 @@ In your terminal of choice:
 - All CLI commands
 
 ```
-> quoter
-> quoter --version
-> quoter -v
-> quoter --help
-> quoter -h
+> quotero
+> quotero --version
+> quotero -v
+> quotero --help
+> quotero -h
 ```
 
 ## Built With
@@ -75,7 +75,7 @@ In your terminal of choice:
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/bradford-james/quoter/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/bradford-james/quotero/tags).
 
 ## Authors
 
@@ -87,4 +87,4 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 ## Upcoming Development
 
-- Establish Quoter as an API (not have to store db doc locally)
+- Establish Quotero as an API (not have to store db doc locally)
