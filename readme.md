@@ -28,7 +28,7 @@ v8.9.4
 Install globally (with npm)
 
 ```
-npm install -g quoter
+>npm install -g quoter
 ```
 
 In your terminal of choice:
@@ -43,7 +43,28 @@ In your terminal of choice:
 
 ## Running the tests
 
-_To Be Completed_
+```
+> npm test
+```
+
+- Retrieval of quote from db doc as object
+
+```javascript
+{
+    quote: expect.any(String),
+    author: expect.any(String)
+}
+```
+
+- All CLI commands
+
+```
+> quoter
+> quoter --version
+> quoter -v
+> quoter --help
+> quoter -h
+```
 
 ## Built With
 
