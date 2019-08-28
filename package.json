@@ -8,7 +8,7 @@
   },
   "readme": "README.md",
   "bin": {
-    "quoter": "bin/quotero.js"
+    "quotero": "bin/quotero.js"
   },
   "repository": {
     "type": "git",
