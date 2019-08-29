@@ -1,10 +1,9 @@
 pipeline {
-    agent { docker { image 'node' } }
+    agent { docker { image 'node:7-alpine' } }
     stages {
         stage('Test') {
             steps {
-                // Compile the tests
-
+                sh 'node --version'
                 sh 'npm test'
             }
         }
