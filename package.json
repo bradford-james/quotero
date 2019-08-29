@@ -4,6 +4,7 @@
   "description": "Returns a random quote.  Can be run from CLI (logs to the console) or included in your source code (returns an object).",
   "main": "index.js",
   "scripts": {
+    "start": "node bin/quotero.js",
     "test": "jest"
   },
   "readme": "README.md",
