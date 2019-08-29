@@ -1,5 +1,5 @@
 pipeline {
-    agent any 
+    agent { docker { image 'temp' } }
     stages {
         stage('Test') {
             steps {
