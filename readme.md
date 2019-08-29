@@ -73,6 +73,8 @@ In your terminal of choice:
 - [Minimist](https://www.npmjs.com/package/minimist) - Parse input parameters, commands, options
 - [Ora](https://www.npmjs.com/package/minimist) - Visual loader
 
+Also includes Dockerfile and Jenkinsfile
+
 ## Versioning
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/bradford-james/quotero/tags).
