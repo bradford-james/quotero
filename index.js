@@ -1,30 +1,33 @@
-const minimist = require("minimist");
+import minimist from 'minimist';
+import quote from './cmds/quote';
+import version from './cmds/version';
+import help from './cmds/help';
 
-module.exports = () => {
+const cli = () => {
   const args = minimist(process.argv.slice(2));
 
-  let cmd = args._[0] || "quote";
+  let cmd = args._[0] || 'quote';
 
   if (args.version || args.v) {
-    cmd = "version";
-  }
-
-  if (args.help || args.h) {
-    cmd = "help";
+    cmd = 'version';
+  } else if (args.help || args.h) {
+    cmd = 'help';
   }
 
   switch (cmd) {
-    case "quote":
-      require("./cmds/quote")(args);
+    case 'quote':
+      quote(args);
       break;
-    case "version":
-      require("./cmds/version")(args);
+    case 'version':
+      version(args);
       break;
-    case "help":
-      require("./cmds/help")(args);
+    case 'help':
+      help(args);
       break;
     default:
-      error(`${cmd} is not a valid command`, true);
+      console.error(`${cmd} is not a valid command`);
+      process.exit(1);
   }
-  return 5;
 };
+
+export default cli();

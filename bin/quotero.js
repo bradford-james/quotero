@@ -1,2 +1,5 @@
 #!/usr/bin/env node
-require("..")();
+
+/* eslint-disable-next-line no-alert, no-global-assign */
+require = require('esm')(module);
+require('..');

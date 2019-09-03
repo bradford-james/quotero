@@ -1,0 +1,22 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 11
+  },
+  "plugins": ["jest"],
+  "extends": "airbnb-base",
+  "overrides": [
+    {
+      "files": ["*test.js"],
+      "rules": {
+        "no-undef": "off"
+      }
+    },
+    {
+      "files": ["*.js"],
+      "rules": {
+        "no-console": "off",
+        "arrow-parens": "off"
+      }
+    }
+  ]
+}

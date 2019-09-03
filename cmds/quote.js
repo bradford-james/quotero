@@ -1,18 +1,19 @@
-const ora = require("ora");
-const getQuote = require("../utils/getQuote");
+import ora from 'ora';
+import chalk from 'chalk';
+import getQuote from '../utils/getQuote';
 
-module.exports = async args => {
+const quote = async () => {
   const spinner = ora().start();
 
   try {
     const randomQuote = await getQuote();
     spinner.stop();
 
-    const consoleOutput = `
+    const consoleOutput = chalk.blue(`
       ${randomQuote.quote}
 
-      -${randomQuote.author}
-    `;
+      -${chalk.cyan(randomQuote.author)}
+    `);
 
     console.log(consoleOutput);
   } catch (err) {
@@ -22,3 +23,5 @@ module.exports = async args => {
     process.exit(1);
   }
 };
+
+export default quote;
