@@ -1,5 +1,8 @@
 #!/usr/bin/env node
+const { pckg, cli } = require('..')
 
-/* eslint-disable-next-line no-alert, no-global-assign */
-require = require('esm')(module);
-require('..');
+if (require.main === module) {
+  cli()
+} else {
+  module.exports = pckg()
+}

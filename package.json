@@ -1,14 +1,21 @@
 {
   "name": "quotero",
-  "version": "2.2.0",
-  "description": "Returns a random quote.  Can be run from CLI (logs to the console) or included in your source code (returns an object).",
+  "version": "0.0.0-development",
+  "description": "./README.md",
   "main": "index.js",
   "scripts": {
     "start": "node bin/quotero.js",
+    "format": "npm run prettier -- --write",
+    "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json)\"",
     "lint": "eslint .",
-    "format": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|ts|tsx)\" --write",
+    "lint:fix": "eslint . --fix",
     "test": "jest",
-    "validate": "npm run lint && npm run prettier && npm test"
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand  --watch",
+    "commit": "npm run format && npm run lint && npm run test && git add . && git cz",
+    "release": "git push --follow-tags",
+    "semantic-release": "semantic-release"
   },
   "readme": "README.md",
   "bin": {
@@ -16,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bradford-james/quotero.git"
+    "url": "https://github.com/bradford-james/quotero.git"
   },
   "keywords": [],
   "author": "Bradford James <bradwettig@gmail.com>",
@@ -27,22 +34,36 @@
   "homepage": "https://github.com/bradford-james/quotero#readme",
   "dependencies": {
     "chalk": "^2.4.2",
-    "esm": "^3.2.25",
     "lowdb": "^1.0.0",
     "minimist": "^1.2.0",
     "ora": "^3.4.0"
   },
   "devDependencies": {
-    "eslint": "^6.3.0",
-    "eslint-config-airbnb": "^18.0.1",
+    "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-config-prettier": "^6.1.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^22.16.0",
-    "eslint-plugin-node": "^9.2.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-security": "^1.4.0",
-    "jest": "^24.9.0",
-    "prettier": "^1.18.2"
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.18.2",
+    "cz-conventional-changelog": "^3.1.0",
+    "semantic-release": "^17.0.4",
+    "@semantic-release/changelog": "^5.0.0",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.0.3",
+    "@semantic-release/npm": "^7.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "",
+      "prepare-commit-msg": "",
+      "commit-msg": "",
+      "post-commit": "",
+      "pre-push": ""
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

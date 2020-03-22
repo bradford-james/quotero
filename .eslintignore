@@ -1,0 +1,5 @@
+*.config.js
+coverage
+.gitignore
+node_modules
+src/project-init/
