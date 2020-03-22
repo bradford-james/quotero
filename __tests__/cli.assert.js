@@ -1,4 +1,4 @@
-const { cli } = require('..')
+const { cli } = require('../index')
 const { version } = require('../package.json')
 
 // Set Up - Tear Down -----------------------------------
